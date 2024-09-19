@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:ital,wght@1,300&display=swap');
+
+.featured h1{
+   font-family: Outfit,'Gadugi';
+   text-align: center;
+   padding-bottom: 20px;
+}
+
+
+
+.fcard{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 30vw;
+  height: 480px;
+}
+
+.fcard:hover{
+  transform: scale(1.1);
+  transition: 0.9s;
+  cursor: pointer;
+}
+
+.fdesc{
+  line-height: 1.5;
+}
+
+@media screen and (max-width:1000px) {
+  .featured h1{
+    font-size: 25px;
+  }
+
+  .feats{
+    display: grid;
+  }
+
+  .fcard{
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:850px) {
+  .featured h1{
+    font-size: 22px;
+  }
+
+  .feats{
+    display: grid;
+  }
+
+  .fcard{
+    width: 80%;
+    margin: auto;
+  }
+}

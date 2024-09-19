@@ -1,0 +1,94 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  /* background-color: #070132; */
+}
+
+.nav img{
+  width: 120px;
+  height: 100%;
+}
+
+.nav-lists {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0 3%;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  justify-content: center; /* Centers the nav items between the logo and the phone icon */
+}
+
+.nav-item {
+  padding: 10px 0;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  color :#68c6c8;
+  cursor: pointer;
+}
+
+.bar-t{
+  color: white;
+}
+
+.search input:focus{
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-lists {
+    max-height: 0;
+    opacity: 0;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    top: 60px; /* Adjust based on the height of your nav */
+    left: 0;
+    background-color: white;
+    width: 100%;
+  }
+
+  .nav-lists.max-h-screen {
+    max-height: 300px; /* Enough space to display all items */
+    padding: 20px 3%;
+  }
+
+  .bar-t {
+    display: block;
+  }
+
+  .bar a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .nav-lists {
+    flex-direction: row;
+    justify-content: center; /* Centers the nav items between the logo and the phone icon */
+    max-height: none;
+    opacity: 1;
+    padding: 0;
+    position: static;
+  }
+
+  .bar-t {
+    display: none;
+  }
+}
+
+.nav-lists {
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.nav-item {
+  cursor: pointer;
+}
