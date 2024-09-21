@@ -1,0 +1,29 @@
+.dest{
+  background-image: url('./trip-catalog.jpg');
+  height: 100vh;
+  background-size: cover;
+}
+
+.left{
+  background-color: rgb(237, 235, 235);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.left hr{
+  color: rgb(0, 0, 0);
+  height: 5px;
+}
+
+.right{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+@media screen and (max-width:800px) {
+  .dest h1{
+    padding-left: 0px;
+  }
+}

@@ -1,56 +1,104 @@
-import React from 'react'
+import React from 'react';
+import './footer.css';
 
 const Footer = () => {
   return (
-    <div className='bg-[#070132]'>
-    <div className='footer grid p-[35px]'>
-    <div className='foots grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  text-white gap-[40px]'>
-      <div className=''>
-        {/* <img src="/Travel-smart-logo.png" className='w-[280px] h-[200px]' alt="" srcset="" /> */}
-        <h1 className='text-5xl text-[#68C6C8] mb-[10px]'>Travel Smart</h1>
-        <p>We are a user-friendly travel website that offers personalized trip recommendations, curated travel packages, and insightful guides. Whether you're seeking exotic destinations, Travel Smart helps you plan the perfect journey. With easy navigation and expert tips, it's your go-to platform for hassle-free, smart travel planning and unforgettable adventures.
+    <footer className="footer bg-[#070031] text-white">
+      <div className="top py-10 px-6">
+        {/* Top Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-between items-center pb-8 border-b border-white">
+          {/* Phone */}
+          <div className="flex flex-col items-center">
+            <div className="w-16 h-16 p-3 bg-[#68c6c8] rounded-full flex justify-center items-center transition-transform duration-300 hover:scale-110">
+              <i className="fa-solid fa-phone text-2xl text-white"></i>
+            </div>
+            <div className="text-white text-base font-semibold mt-2">+123 4568 789 160</div>
+          </div>
 
-</p>
-        <div className='flex gap-6 mt-3'>
-          <a href="https://x.com/aptechltd">
-        <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="">
+          {/* Website */}
+          <div className="flex flex-col items-center">
+            <div className="w-16 h-16 p-3 bg-[#68c6c8] rounded-full flex justify-center items-center transition-transform duration-300 hover:scale-110">
+              <i className="fa-solid fa-envelope text-2xl text-white"></i>
+            </div>
+            <div className="text-white text-base font-semibold mt-2">www.SmartTravel.com</div>
+          </div>
 
-        <i class="fa-brands fa-instagram"></i>
-          </a>
-        <i class="fa-brands fa-facebook-f"></i>
+          {/* Location */}
+          <div className="flex flex-col items-center">
+            <div className="w-16 h-16 p-3 bg-[#68c6c8] rounded-full flex justify-center items-center transition-transform duration-300 hover:scale-110">
+              <i className="fa-solid fa-location-dot text-2xl text-white"></i>
+            </div>
+            <div className="text-white text-base font-semibold mt-2">Dada Estate Oshogbo Osun</div>
+          </div>
+        </div>
+
+        {/* Middle Section: Links */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-8">
+          {/* About */}
+          <div>
+            <h3 className="text-xl font-bold capitalize mb-4">About</h3>
+            <ul className="space-y-2">
+              <li className="text-white hover:text-[#68c6c8] transition-colors duration-200 cursor-pointer">Our Story</li>
+              <li className="text-white hover:text-[#68c6c8] transition-colors duration-200 cursor-pointer">Awards</li>
+              <li className="text-white hover:text-[#68c6c8] transition-colors duration-200 cursor-pointer">Team</li>
+              <li className="text-white hover:text-[#68c6c8] transition-colors duration-200 cursor-pointer">Careers</li>
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div>
+            <h3 className="text-xl font-bold capitalize mb-4">Company</h3>
+            <ul className="space-y-2">
+              <li className="text-white hover:text-[#68c6c8] transition-colors duration-200 cursor-pointer">Our Services</li>
+              <li className="text-white hover:text-[#68c6c8] transition-colors duration-200 cursor-pointer">Clients</li>
+              <li className="text-white hover:text-[#68c6c8] transition-colors duration-200 cursor-pointer">Contact</li>
+              <li className="text-white hover:text-[#68c6c8] transition-colors duration-200 cursor-pointer">Fees</li>
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <h3 className="text-xl font-bold capitalize mb-4">Resources</h3>
+            <ul className="space-y-2">
+              <li className="text-white hover:text-[#68c6c8] transition-colors duration-200 cursor-pointer">Blogs</li>
+              <li className="text-white hover:text-[#68c6c8] transition-colors duration-200 cursor-pointer">Newsletters</li>
+              <li className="text-white hover:text-[#68c6c8] transition-colors duration-200 cursor-pointer">Privacy Policy</li>
+            </ul>
+          </div>
+
+          {/* Subscription */}
+          <div>
+            <h3 className="text-xl font-bold capitalize mb-4">Subscription</h3>
+            <div className="bg-white text-black w-full p-2 rounded-lg flex items-center">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="w-full bg-transparent text-lg px-2 outline-none"
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <div>
-        <h1 className='text-2xl  text-[#68C6C8] mb-[10px]'>Contact Us</h1>
-        <ul>
-          <li>
-    <b>Email</b>: info@travelsmart.ng
-          </li>
-          <li>
-<b>Hours</b>: 9:00 am - 5:00 pm
-          </li>
-          <li>
-<b>Phone</b>: +234 912 848 5866
-          </li>
-        </ul>
-      </div>
-      <div className='md:hidden sm:hidden lg:block'>
-        <h1 className='text-2xl  text-[#68C6C8] mb-[10px]'>Links</h1>
-        <ul>
-          <li>Courses</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Enroll Now</li>
-        </ul>
-      </div>
-    </div>
-    <hr className='mt-[20px] mb-[20px]' />
-    <p className='text-white text-center'>Copyright <i class="fa-regular fa-copyright"></i>  2024 Travel Smart</p>
-    </div>
-    </div>
-  )
-}
 
-export default Footer
+      {/* Bottom Section */}
+      <div className="bottom py-4 bg-[#68c6c8]">
+        <div className="flex justify-center gap-6 mb-4">
+          {/* Social Icons */}
+          {['facebook-f', 'twitter', 'instagram', 'linkedin-in'].map((icon) => (
+            <div
+              key={icon}
+              className="w-12 h-12 p-3 bg-[#070031] rounded-full flex justify-center items-center text-white text-xl transition-transform duration-300 hover:scale-110 cursor-pointer"
+            >
+              <i className={`fa-brands fa-${icon}`}></i>
+            </div>
+          ))}
+        </div>
+        <div className="text-center text-white text-base font-bold">
+          © 2024-2025 Travel Smart. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

@@ -49,7 +49,7 @@ const Hero = () => {
           <div className="content">
             <div className="name">Switzerland</div>
             <div className="des">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, voluptates.
+              It is a well brought up coutry in the heart of europe.
             </div>
             <button>See More</button>
           </div>
@@ -60,7 +60,7 @@ const Hero = () => {
           <div className="content">
             <div className="name">Bahamas</div>
             <div className="des">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, voluptates.
+              The perfect place for the holidays.
             </div>
             <button>See More</button>
           </div>
@@ -71,7 +71,7 @@ const Hero = () => {
           <div className="content">
             <div className="name">Finland</div>
             <div className="des">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, voluptates.
+              No better place to go to, when you need peace.
             </div>
             <button>See More</button>
           </div>
@@ -82,7 +82,7 @@ const Hero = () => {
           <div className="content">
             <div className="name">Tokyo</div>
             <div className="des">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, voluptates.
+              The city of the future and the technological city.
             </div>
             <button>See More</button>
           </div>
@@ -93,7 +93,7 @@ const Hero = () => {
           <div className="content">
             <div className="name">Paris</div>
             <div className="des">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, voluptates.
+              The city of love, Where one can find his soulmate easily.
             </div>
             <button>See More</button>
           </div>

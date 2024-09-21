@@ -92,3 +92,16 @@
 .nav-item {
   cursor: pointer;
 }
+
+.search-results-dropdown {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.search-result-item img {
+  border-radius: 4px;
+}
+
+.search-result-item:hover {
+  background-color: #f0f0f0;
+}

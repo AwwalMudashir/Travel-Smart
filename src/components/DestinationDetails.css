@@ -1,0 +1,39 @@
+.destination-details-page {
+  max-width: 1200px; /* Limit width for larger screens */
+  margin: 0 auto; /* Center the page */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 2rem; /* Responsive font size */
+  }
+
+  .description, .activities-title, .transportation-title, .rental-info, .walking-description, .best-time-title {
+    font-size: 1rem; /* Adjust font size for small screens */
+  }
+}
+
+@media (min-width: 640px) {
+  .activities-title, .transportation-title, .rental-title, .walking-title, .best-time-title {
+    margin: 1.5rem 0; /* Add more margin for larger screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .activity {
+    width: 45%; /* Two activities per row on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .activity {
+    width: 22%; /* Four activities per row on large screens */
+  }
+
+  .best-time-info {
+    flex-direction: row; /* Arrange season items in a row on larger screens */
+  }
+}
+
+

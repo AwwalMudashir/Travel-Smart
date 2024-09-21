@@ -1,0 +1,15 @@
+.chero{
+  background-image: url('./chero.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.chero h1{
+  font-family: Outfit;
+  /* padding-top: 30%; */
+}
+
+.touch h1{
+  font-family: Outfit;
+}

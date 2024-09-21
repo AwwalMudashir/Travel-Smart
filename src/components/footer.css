@@ -3,3 +3,7 @@
 .footer{
   font-family:Nunito ;
 }
+
+.footer ul li{
+  font-family: Poppins;
+}
