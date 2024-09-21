@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Destination = (props) => {
   return (
-    <div className="max-w-sm mx-auto bg-white shadow-lg rounded-xl overflow-hidden">
+    <div className="max-w-sm  w-[400px] mx-auto bg-white shadow-lg rounded-xl overflow-hidden">
       {/* Image Section */}
       <div className="relative">
         <img 
@@ -38,3 +38,5 @@ const Destination = (props) => {
 };
 
 export default Destination;
+
+
